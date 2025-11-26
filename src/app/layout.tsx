@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
-import { Urbanist } from "next/font/google";
+import { Poppins } from "next/font/google";
 import "./globals.css";
 
-const urbanist = Urbanist({
-  variable: "--font-urbanist",
+const poppins = Poppins({
+  variable: "--font-poppins",
   subsets: ["latin", "latin-ext"],
   weight: ["300", "400", "500", "600", "700", "800", "900"],
 });
@@ -22,7 +22,7 @@ export default function RootLayout({
   return (
     <html lang="vi">
       <body
-        className={`${urbanist.variable} font-sans antialiased`}
+        className={`${poppins.variable} font-sans antialiased`}
       >
         {children}
       </body>
