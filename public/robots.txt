@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Sitemap
-Sitemap: https://suntalent.vn/sitemap.xml
+Sitemap: https://suntalent-landing.vercel.app/sitemap.xml
 
 # Disallow admin/private paths (if any)
 # Disallow: /admin/

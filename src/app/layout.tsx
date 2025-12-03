@@ -8,7 +8,7 @@ const poppins = Poppins({
   weight: ["300", "400", "500", "600", "700", "800", "900"],
 });
 
-const siteUrl = "https://suntalent.vn";
+const siteUrl = "https://suntalent-landing.vercel.app";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),

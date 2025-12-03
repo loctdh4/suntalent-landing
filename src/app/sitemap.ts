@@ -1,7 +1,7 @@
 import { MetadataRoute } from "next";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://suntalent.vn";
+  const baseUrl = "https://suntalent-landing.vercel.app";
 
   return [
     {
