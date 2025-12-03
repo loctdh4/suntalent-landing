@@ -63,7 +63,7 @@ export default function Clients() {
         </svg>
       ),
       clients: [
-        "CTY Ola Food",
+        "Công ty Ola Food",
         "VIFON",
         "Thực Phẩm Xanh",
         "Công ty Giáo Dục Việt Nam",

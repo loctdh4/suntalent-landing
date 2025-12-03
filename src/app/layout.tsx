@@ -57,7 +57,7 @@ export const metadata: Metadata = {
       "Kết nối nhân tài, kiến tạo thành công. SunTalent cung cấp giải pháp tuyển dụng chuyên nghiệp với hơn 10,000+ hồ sơ ứng viên và 300+ doanh nghiệp đối tác.",
     images: [
       {
-        url: "/og-image.jpg",
+        url: "/assets/background.png",
         width: 1200,
         height: 630,
         alt: "SunTalent - Đối Tác Tuyển Dụng Chiến Lược",
@@ -70,7 +70,7 @@ export const metadata: Metadata = {
     title: "SunTalent - Đối Tác Tuyển Dụng Chiến Lược",
     description:
       "Kết nối nhân tài, kiến tạo thành công. Giải pháp tuyển dụng chuyên nghiệp với hơn 10,000+ hồ sơ ứng viên.",
-    images: ["/og-image.jpg"],
+    images: ["/assets/background.png"],
     creator: "@suntalent",
   },
   // Robots
@@ -90,6 +90,10 @@ export const metadata: Metadata = {
   //   google: "your-google-verification-code",
   //   yandex: "your-yandex-verification-code",
   // },
+  icons: {
+    icon: "/assets/logo.png",
+    apple: "/assets/logo.png",
+  },
 };
 
 // JSON-LD Structured Data
