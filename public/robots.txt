@@ -1,0 +1,10 @@
+# https://www.robotstxt.org/robotstxt.html
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://suntalent.vn/sitemap.xml
+
+# Disallow admin/private paths (if any)
+# Disallow: /admin/
+# Disallow: /api/
