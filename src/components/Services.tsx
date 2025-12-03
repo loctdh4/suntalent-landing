@@ -49,9 +49,9 @@ export default function Services() {
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4" />
         </svg>
       ),
-      title: "Đánh Giá Ứng Viên",
-      description: "Thực hiện bài test năng lực, phỏng vấn chuyên sâu và sàng lọc ứng viên kỹ lưỡng để đảm bảo chất lượng tốt nhất.",
-      features: ["Test năng lực", "Phỏng vấn chuyên sâu", "Báo cáo chi tiết"],
+      title: "Phòng Tuyển Dụng Thuê Ngoài (RPO)",
+      description: "Đội ngũ chuyên gia hoạt động như phòng HR in-house, quản lý toàn bộ quy trình tuyển dụng từ đăng tin, sàng lọc đến onboarding.",
+      features: ["Quản lý toàn bộ quy trình", "Tiết kiệm chi phí HR", "Báo cáo định kỳ"],
       image: "https://images.unsplash.com/photo-1565688534245-05d6b5be184a?q=80&w=600",
     },
   ];

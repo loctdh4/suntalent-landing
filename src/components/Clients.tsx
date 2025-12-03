@@ -9,17 +9,18 @@ export default function Clients() {
 
   const industries = [
     {
-      name: "Xây Dựng",
+      name: "Xây Dựng - BĐS",
       icon: (
         <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
         </svg>
       ),
       clients: [
-        "Công ty XD Công Nghiệp Hà Nội",
-        "Công ty Phú Gia",
-        "Trường Kính TKC",
-        "Công ty CP Xây Dựng Thành Công",
+        "Công ty TNHH Xây Dựng và Trang Trí Nội Thất Gia Định",
+        "Công ty TNHH Giải Pháp Vật Liệu Xây Dựng JTB Việt Nam",
+        "Công ty Minh Cường Steel",
+        "Công ty CP Tư Vấn - Xây Dựng Điện Chiếu Sáng Su Li Co",
+        "Công ty Thiên Khôi",
       ],
     },
     {
@@ -31,40 +32,42 @@ export default function Clients() {
         </svg>
       ),
       clients: [
-        "Công ty TNHH XNK Bảo Tín",
-        "Công ty TNHH Nhựa Đông Phương",
-        "Công ty Sản Xuất & TM 30/6",
-        "CTY Cổ Phần Á Châu",
+        "Công ty CP Alumax Việt Nam",
+        "Công ty TNHH Thương Mại Sản Xuất Medicos",
+        "Công ty Thuận Phong",
+        "Công ty Công Nghiệp VMC",
+        "Nam Phát Group",
+        "Công ty TNHH MTV PCCC và An Ninh Điện Tử Hà Bắc",
       ],
     },
     {
-      name: "Thương Mại & Dịch Vụ",
+      name: "Công Nghệ & Dịch Vụ",
+      icon: (
+        <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+        </svg>
+      ),
+      clients: [
+        "Công ty Hà Bắc",
+        "Tú Anh Store",
+        "Công ty CP Nebula-ATA",
+        "Fagomom",
+        "Thời Trang The D",
+      ],
+    },
+    {
+      name: "Thực Phẩm & Bán Lẻ",
       icon: (
         <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
         </svg>
       ),
       clients: [
-        "Công ty TNHH Vận Tải Việt Chiến",
-        "Công ty Showa Brain NaVi VN",
-        "Công ty Du lịch Saco Travel",
-        "Công ty Vận Tải Bảo An",
-      ],
-    },
-    {
-      name: "Giáo Dục",
-      icon: (
-        <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path d="M12 14l9-5-9-5-9 5 9 5z" />
-          <path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z" />
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222" />
-        </svg>
-      ),
-      clients: [
-        "Trung tâm Kumon",
-        "Mầm non Ước Mơ Của Bé",
-        "Công ty TNHH An Lạc",
-        "TT Du học Hàn Quốc Thủ Đô",
+        "CTY Ola Food",
+        "VIFON",
+        "Thực Phẩm Xanh",
+        "Công ty Giáo Dục Việt Nam",
+        "PNJ",
       ],
     },
   ];

@@ -472,6 +472,36 @@ export default function Contact() {
             )}
           </motion.div>
         </div>
+
+        {/* CTV Banner */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={isInView ? { opacity: 1, y: 0 } : {}}
+          transition={{ delay: 0.7 }}
+          className="mt-12 bg-yellow-50 border border-yellow-200 rounded-xl p-5 flex flex-col sm:flex-row items-center justify-between gap-4"
+        >
+          <div className="text-center sm:text-left">
+            <h3 className="text-base font-bold text-gray-900">
+              Trở thành <span className="text-yellow-600">Cộng Tác Viên</span> của SunTalent
+            </h3>
+            <p className="text-gray-600 text-sm">
+              Kiếm thêm thu nhập từ việc giới thiệu ứng viên.
+            </p>
+          </div>
+          <motion.a
+            href="https://docs.google.com/forms/d/e/1FAIpQLSdybdWqHp449IJKfeh_uBcS4mBrQHTljlAfrqhbLp43OxZK7g/viewform?fbclid=IwY2xjawOdJ-BleHRuA2FlbQIxMQBicmlkETFqZ0ZMOTJ5TmhlQVhsd3Ftc3J0YwZhcHBfaWQQMjIyMDM5MTc4ODIwMDg5MgABHvsCyo0lkwBexUqEtUYx7sqNl3QX2USrmrN_OFT3ILXSvPKNl6Dyc9YJOZek_aem_1OxyZMRlI2ZzZscSR__PXA"
+            target="_blank"
+            rel="noopener noreferrer"
+            whileHover={{ scale: 1.02 }}
+            whileTap={{ scale: 0.98 }}
+            className="shrink-0 inline-flex items-center gap-2 bg-yellow-500 text-white px-4 py-2 rounded-full text-sm font-semibold hover:bg-yellow-600 transition-colors"
+          >
+            Đăng ký CTV
+            <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+            </svg>
+          </motion.a>
+        </motion.div>
       </div>
     </section>
   );

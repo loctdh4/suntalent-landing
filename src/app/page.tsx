@@ -5,6 +5,7 @@ import Services from "@/components/Services";
 import Process from "@/components/Process";
 import Stats from "@/components/Stats";
 import Clients from "@/components/Clients";
+import TalentPool from "@/components/TalentPool";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 
@@ -15,8 +16,9 @@ export default function Home() {
       <Hero />
       <About />
       <Services />
+      <TalentPool />
       <Process />
-      <Stats />
+      {/* <Stats /> */}
       <Clients />
       <Contact />
       <Footer />

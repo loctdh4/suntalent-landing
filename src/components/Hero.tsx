@@ -1,7 +1,39 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { motion, useInView } from "framer-motion";
 import Image from "next/image";
+import { useEffect, useState, useRef } from "react";
+
+function CountUp({ end, duration = 2, suffix = "" }: { end: number; duration?: number; suffix?: string }) {
+  const [count, setCount] = useState(0);
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true });
+
+  useEffect(() => {
+    if (!isInView) return;
+
+    let startTime: number;
+    let animationFrame: number;
+
+    const animate = (timestamp: number) => {
+      if (!startTime) startTime = timestamp;
+      const progress = Math.min((timestamp - startTime) / (duration * 1000), 1);
+
+      // Easing function for smooth animation
+      const easeOut = 1 - Math.pow(1 - progress, 3);
+      setCount(Math.floor(easeOut * end));
+
+      if (progress < 1) {
+        animationFrame = requestAnimationFrame(animate);
+      }
+    };
+
+    animationFrame = requestAnimationFrame(animate);
+    return () => cancelAnimationFrame(animationFrame);
+  }, [end, duration, isInView]);
+
+  return <span ref={ref}>{count.toLocaleString()}{suffix}</span>;
+}
 
 export default function Hero() {
   const containerVariants = {
@@ -25,10 +57,10 @@ export default function Hero() {
   };
 
   const stats = [
-    { value: "300+", label: "Doanh nghiệp đối tác" },
-    { value: "3200+", label: "Vị trí tuyển dụng" },
-    { value: "92%", label: "Tỷ lệ giữ chân" },
-    { value: "10K+", label: "Hồ sơ ứng viên" },
+    { value: 300, suffix: "+", label: "Doanh nghiệp đối tác" },
+    { value: 3200, suffix: "+", label: "Vị trí tuyển dụng" },
+    { value: 92, suffix: "%", label: "Tỷ lệ giữ chân" },
+    { value: 10000, suffix: "+", label: "Hồ sơ ứng viên" },
   ];
 
   return (
@@ -131,7 +163,7 @@ export default function Hero() {
                     className="text-center sm:text-left"
                   >
                     <div className="text-3xl md:text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-yellow-500 to-yellow-400 mb-1">
-                      {stat.value}
+                      <CountUp end={stat.value} suffix={stat.suffix} duration={2} />
                     </div>
                     <div className="text-gray-500 text-sm">{stat.label}</div>
                   </motion.div>
